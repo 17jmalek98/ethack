@@ -1,0 +1,51 @@
+~Emails and Passwords~
+
+hunter.io - returns all email addresses related to target.  
+	    look for patterns in email addresses.
+	    limited to 20 searches a month. 
+
+breach-parse - scans all data breaches for emails and passwords.
+	       44gb download size.
+
+theHarvester - kali tool.  specify a domain and depth of search.  not as good as others but free.
+	       sample run: `theHarvester -d tesla.com -l 500 -b google`
+
+
+~Subdomains~
+
+Sublist3r - kali tool. looks through given domain for subdomains.
+	    sample run: `sublist3r -d tesla.com -t #threads`
+
+crt.sh - certificate search. uses certificate fingerprinting to try and find registered domains
+	 sample query: `%.tesla.com`
+	 sso: single sign on
+
+OWASP AMASS - goto program for bug bounties. takes a long time to run, but can be configured.
+	      should install on own time.
+
+httpprobe - scans domains to see if they're alive
+
+
+~Website Decomposers~
+
+BuiltWith.com - shows the makeup of a website, and what technologies its built on
+
+wappalyzer - firefox extension showing website makeup.
+
+whatweb - kali tool. shows build, ip and redirects
+	  sample run: whatweb https://tesla.com
+
+
+
+~BurpSuite~
+Use to observe web traffic and response.  target -> sitemap or proxy -> forward
+
+
+~Google Fu~
+site:tesla.com - finds websites
+site:tesla.com -www: finds websites without www
+site:tesla.com filetype:docx -> finds filetypes
+
+~Social Media~ 
+Look through social media to see what information is gatherable.
+
